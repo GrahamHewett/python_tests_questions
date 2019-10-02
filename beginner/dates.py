@@ -1,6 +1,7 @@
 from datetime import date
 import time
 import datetime
+import calendar
 
 def main():
 	print ("Today's date is ", date.today())
@@ -13,12 +14,18 @@ def get_week_day(day, month, year):
 
 (get_week_day(13, 5, 1986))
 
-def formatDates():
+2 days/months/years before a given date was 
+
+def format_dates():
 	#strtime
 	#
 	return;
 
-def formatTimes():
+def format_times():
 	#strtime
 	#
 	return;
+
+def is_leap_year(year):
+	return calendar.isleap(year)
+print(is_leap_year(2019))

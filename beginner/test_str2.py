@@ -12,7 +12,7 @@ def test_cast_to_string():
 	assert cast_to_string(False) == "False"
 	assert cast_to_string(0b111) == "7"
 
-def test_first_20_chars():
+def test_first_n_chars():
 	text = "The 1st 20 chars end| before the pipe"
 	n = 20
 	assert first_20_chars(text, n) == "The 1st 20 chars end"
@@ -22,9 +22,10 @@ def test_first_20_chars():
 # 		text = "The 1st 20 chars end| before the pipe"
 # 		self.assertEqual(first_20_chars(text, n), "The 1st 20 chars end")
 
-def test_concatenate_strings():
-	assert concatenate_strings("When two ", "become one") == \
-"When two become one"
+	class TestUM(unittest.TestCase):
+		def test_alternate_letters(self):
+		text = ""
+		self.assertEqual(first_20_chars(text, n), "The 1st 20 chars end")
 
 def test_convert_string_to_list():
 	sentence = "first - second - third" 

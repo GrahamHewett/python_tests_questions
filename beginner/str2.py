@@ -1,17 +1,16 @@
 #Turn a number into a string. Mix Numbers and strings, conversions
 
-def cast_to_string(input=False):
+def cast_to_string(input=False): #casting
 	return str(input)
 print(cast_to_string)
 
-def first_20_chars(text, n):
+def first_n_chars(text, n): #slicing
 	return text[0:n:2]
-	#slicing
-print(first_20_chars("the beautiful letter: is lost after the colon", 20)) 
+print(first_n_chars("the beautiful letter: is lost after the colon", 20)) 
 
-def alternate_letters(str1, str2):
-	return str1 + str2
-print(concatenate_strings("When two ", "become one"))
+def selected_letters(text, n, step):
+	return text[0:n:step]
+print(selected_letters("When two ", "become one"))
 
 strL = "first - second - third"
 def convert_string_to_list(strList):
