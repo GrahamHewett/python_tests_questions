@@ -29,3 +29,8 @@ def format_times():
 def is_leap_year(year):
 	return calendar.isleap(year)
 print(is_leap_year(2019))
+
+import calendar
+
+#work out whether a given year is a leap year.
+calendar.isleap(year)

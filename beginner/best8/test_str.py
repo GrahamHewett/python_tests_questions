@@ -1,19 +1,18 @@
 #Turn a number into a string. Mix Numbers and strings.
-from str import monty_python_quote
-from str import repeat_n_times
-from str import same_length
-from str import replace_text
-from str import occurences
+from str import monty_python_quote, spam, same_length, replace_text, occurences
+
+import unittest
 
 class TestUM(unittest.TestCase):
-    def test_(self):
-	self.assertEqual
+	def test_spam(self):
+		self.assertEqual(spam("a", 2), "aa")
+		self.assertEqual(spam("b", 3), "bbb")
 
 def test_MontyPythonQuote():
 	assert monty_python_quote() == "We interrupt this program to annoy you and make things generally irritating!"
 
 def test_spam():
-	assert repeat_n_times("developers ", 3) == "developers developers developers developers" or "developers developers developers developers "
+	assert spam("developers ", 3) == "developers developers developers developers" or "developers developers developers developers "
 
 def test_same_length():
 	assert same_length("hello ", "world") == False
